@@ -1,11 +1,15 @@
+import React, { useState } from 'react'
 import { Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
 
-export default function Experience()
-{
-    const computer = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
+export default function Experience() {
+    const computer = useGLTF('./ipad.gltf')    
+    const [currentWebsite, setCurrentWebsite] = useState("https://exo-vision.web.app/");
+
+    const handleButtonClick = (website) => {
+        setCurrentWebsite(website);
+    }
     
     return <>
-
         <color args={ [ '#003c5f' ] } attach="background" />
 
         <Environment preset="city" />
@@ -31,20 +35,39 @@ export default function Experience()
                 <primitive
                     object={ computer.scene }
                     position-y={ - 1.2 }
-                    // rotation-x={ 0.13 }
                 >
                     <Html
                         transform
                         wrapperClass="htmlScreen"
                         distanceFactor={ 1.17 }
-                        position={ [ 0, 1.56, - 1.4 ] }
+                        position={ [ 0, 1.50, - 1.4 ] }
                         rotation-x={ - 0.256 }
                     >
-                        <iframe src="https://exo-vision.web.app/" />
+                        <iframe src={currentWebsite} />
                     </Html>
                 </primitive>
 
-            
+                <Text
+                    font="./RussoOne-Regular.ttf"
+                    fontSize={ .15 }
+                    position={ [ -0.5, -1.7, 0 ] }
+                    rotation-y={ 0 }
+                    maxWidth={ 4 }
+                    onClick={() => handleButtonClick("https://exo-vision.web.app/")}
+                >
+                    Button 1
+                </Text>
+
+                <Text
+                    font="./RussoOne-Regular.ttf"
+                    fontSize={ .15 }
+                    position={ [ 0.5, -1.7, 0 ] }
+                    rotation-y={ 0 }
+                    maxWidth={ 4 }
+                    onClick={() => handleButtonClick("https://www.google.com/")}
+                >
+                    Button 2
+                </Text>
 
                 <Text
                     font="./RussoOne-Regular.ttf"
