@@ -23,3 +23,22 @@ canvas
     border-radius: 20px;
     background: #000000;
 }
+
+input {
+  font-family: 'Inter';
+  width: 100px;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  color: transparent;
+  caret-color: #ffffff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-weight: 30px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none !important;
+}

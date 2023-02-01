@@ -1,9 +1,11 @@
 import React, { Suspense, useState, useRef  } from 'react'
-import { Cloud, Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF, Text3D, Center, useMatcapTexture, Sparkles } from '@react-three/drei'
+import { Cloud, Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF, Text3D, Center, useMatcapTexture, Sparkles, Image } from '@react-three/drei'
 import * as THREE from 'three'
 import { useMemo } from 'react'
 import { MathUtils } from 'three'
 import { Canvas, useFrame } from '@react-three/fiber'
+import { ControlledInput } from './ControlledInput'
+
 
 /* import { EffectComposer, Bloom } from '@react-three/postprocessing'
  */
@@ -44,8 +46,7 @@ function Geometries() {
 export default function Experience() {
     const computer = useGLTF('./ipad.gltf')   
     
-    const [currentWebsite, setCurrentWebsite] = useState("https://exo-vision.web.app/");
-    const [cameraPosition, setCameraPosition] = useState([0, 0, 5]);
+    const [currentWebsite, setCurrentWebsite] = useState("http://localhost:3000/");
     const [ matcapTexture ] = useMatcapTexture('17395A_7EBCC7_4D8B9F_65A1B5', 256)
 
 
@@ -53,19 +54,39 @@ export default function Experience() {
         setCurrentWebsite(website);
     }
 
+    function Input(props) {
+        const [text, set] = useState('hello world ...')
+        return (
+          <group {...props}>
+            <Text position={[-1.2, -0.022, 0]} anchorX="0px" font="/Inter-Regular.woff" fontSize={0.335} letterSpacing={-0.0}>
+              {text}
+              <meshStandardMaterial color="black" />
+            </Text>
+            <mesh position={[0, -0.022, 0]} scale={[2.5, 0.48, 1]}>
+              <planeGeometry />
+              <meshBasicMaterial transparent opacity={0.3} depthWrite={false} />
+            </mesh>
+            <Html transform>
+              <ControlledInput type={text} onChange={(e) => set(e.target.value)} value={text} />
+            </Html>
+          </group>
+        )
+      }
+
 
 
     return <>
-        <color args={ [ '#060606' ] } attach="background" />
+        <color args={ [ '#000000' ] } attach="background" />
 
-
+{/*         <Input position={[0, 0, 0]} />
+ */}
         
         <PresentationControls
             global
             rotation={ [ 0, 0, 0 ] }
             polar={ [ - 0.1, 0.2 ] }
             azimuth={ [ - 1, 0.75 ] }
-            cameraPosition={cameraPosition}
+            cameraPosition={ [ 0, 0, 3 ] }
             config={ { mass: 2, tension: 400 } }
             snap={ { mass: 4, tension: 400 } }
         >
@@ -102,44 +123,92 @@ export default function Experience() {
             </Float>
         </PresentationControls>
 
+        <Text
+                        font="./RussoOne-Regular.ttf"
+                        fontSize={ .10 }
+                    position={ [ -1, -1.25, 0 ] }
+                    rotation={ [ -0.5, 0, 0 ] }
+                    maxWidth={ 4 }
+                        onClick={() => handleButtonClick("https://tockify.com/rodrigo.garcia/agenda")}
+                    >
+                        EVENTOS
+        </Text>
 
         <Text
                         font="./RussoOne-Regular.ttf"
-                        fontSize={ .15 }
-                    position={ [ -1, -1.2, 0 ] }
-                    rotation-y={ 0 }
-                        maxWidth={ 4 }
+                        fontSize={ .10 }
+                    position={ [ -.45, -1.25, 0 ] }
+                    rotation={ [ -0.5, 0, 0 ] }
+                    maxWidth={ 4 }
                         onClick={() => handleButtonClick("https://askmybook.com/")}
                     >
                         Q&A
         </Text>
 
-        <Text
+        {/* <Text
                     font="./RussoOne-Regular.ttf"
                     fontSize={ .15 }
                     position={ [ 0, -1.2, 0 ] }
                     rotation-y={ 0 }
                     maxWidth={ 4 }
-                    onClick={() => handleButtonClick("https://exo-vision.web.app/")}
+                    onClick={() => handleButtonClick("http://localhost:3000/")}
                     >
                         PRESENTACIÓN
-        </Text>
+        </Text> */}
+
+        <Image
+        url="./pilar.png"
+        scale={.25}
+        transparent
+        position={ [ 0, -1.25, 0 ] }
+        rotation={ [ -0.5, 0, 0 ] }
+        onClick={() => handleButtonClick("http://localhost:3000/")}
+        ></Image>
+
+        <Image
+        url="./gafas.png"
+        scale={.15}
+        transparent
+        position={ [ 0, -1.4, 0.3 ] }
+        rotation={ [ -0.5, 0, 0 ] }
+        onClick={() => handleButtonClick("http://localhost:3000/")}
+        ></Image>
+
+        <Image
+        url="./menu.png"
+        scale={2}
+        transparent
+        position={ [ 0, -1.25, -0.1 ] }
+        rotation={ [ -0.5, 0, 0 ] }
+        ></Image>
+
 
         <Text
                     font="./RussoOne-Regular.ttf"
-                    fontSize={ .15 }
-                    position={ [ 1, -1.2, 0 ] }
-                    rotation-y={ 0 }
+                    fontSize={ .10 }
+                    position={ [ .45, -1.25, 0 ] }
+                    rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
                     onClick={() => handleButtonClick("https://exo-vision.web.app/")}
                     >
                         BLOG
         </Text>
+
+        <Text
+                    font="./RussoOne-Regular.ttf"
+                    fontSize={ .10 }
+                    position={ [ 1.1, -1.25, 0 ] }
+                    rotation={ [ -0.5, 0, 0 ] }
+                    maxWidth={ 4 }
+                    onClick={() => handleButtonClick("http://rgsaura.local/")}
+                    >
+                        UTILIDADES
+        </Text>
                    
 
         <Text3D
                 font="/Inter_Bold.json"
-                position={ [ -1.2, -1, 0 ] }
+                position={ [ -0.68, -1, 0 ] }
                 rotation={ [ -0.5, 0, 0 ] }
                 size={ 0.2 }
                 height={ 0.1 }
@@ -151,7 +220,7 @@ export default function Experience() {
                 bevelSegments={ 5 }
                 
                 >
-                RODRIGO GARCIA
+                RGSAURA
                 <meshMatcapMaterial matcap={ matcapTexture } />
         </Text3D>
 
