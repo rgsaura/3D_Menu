@@ -9,6 +9,8 @@ import { ControlledInput } from './ControlledInput'
 
 
 export default function Experience() {
+
+
     const computer = useGLTF('./ipad.gltf')   
     
     const [currentWebsite, setCurrentWebsite] = useState("https://inicio-ks2lesn6p-rgsaura.vercel.app/");
@@ -43,6 +45,7 @@ export default function Experience() {
     return <>
         <color args={ [ '#000000' ] } attach="background" />
 
+   
         
         <PresentationControls
             global
@@ -143,9 +146,9 @@ export default function Experience() {
                     position={ [ .45, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                    onClick={() => handleButtonClick("https://exo-vision.web.app/")}
+                    onClick={() => handleButtonClick("https://rgsaura.github.io/rgsaura-virtualshowroom/")}
                     >
-                        BLOG
+                        MUNDO
         </Text>
 
         <Text
