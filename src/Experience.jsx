@@ -11,7 +11,7 @@ import { ControlledInput } from './ControlledInput'
 export default function Experience() {
     const computer = useGLTF('./ipad.gltf')   
     
-    const [currentWebsite, setCurrentWebsite] = useState("http://localhost:3000/");
+    const [currentWebsite, setCurrentWebsite] = useState("https://inicio-ks2lesn6p-rgsaura.vercel.app/");
     const [ matcapTexture ] = useMatcapTexture('17395A_7EBCC7_4D8B9F_65A1B5', 256)
 
 
