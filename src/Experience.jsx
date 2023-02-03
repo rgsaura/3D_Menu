@@ -103,7 +103,7 @@ export default function Experience() {
                     position={ [ -.45, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                        onClick={() => handleButtonClick("https://rgsaura-ia1.herokuapp.com/")}
+                        onClick={() => handleButtonClick("https://padrerico.herokuapp.com/")}
                     >
                         Q&A
         </Text>
