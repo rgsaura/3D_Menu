@@ -7,41 +7,6 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { ControlledInput } from './ControlledInput'
 
 
-/* import { EffectComposer, Bloom } from '@react-three/postprocessing'
- */
-
-
-
-/* const material = new THREE.MeshStandardMaterial()
-const geometries = [
-    { geometry: new THREE.TetrahedronBufferGeometry(2) },
-    { geometry: new THREE.CylinderBufferGeometry(0.8, 0.8, 2, 32) },
-    { geometry: new THREE.ConeGeometry(1.1, 1.7, 32) },
-    { geometry: new THREE.SphereBufferGeometry(1.5, 32, 32) },
-    { geometry: new THREE.IcosahedronBufferGeometry(2) },
-    { geometry: new THREE.TorusBufferGeometry(1.1, 0.35, 16, 32) },
-    { geometry: new THREE.OctahedronGeometry(2) },
-    { geometry: new THREE.SphereBufferGeometry(1.5, 32, 32) },
-    { geometry: new THREE.BoxBufferGeometry(2.5, 2.5, 2.5) }
-  ]
-
-function Geometries() {
-    const n = 40
-    const randProps = useMemo(() => Array.from({ length: n }, () => geometries[Math.floor(Math.random() * geometries.length)]), [])
-    return randProps.map((prop) => {
-      return (
-        <Float>
-          <mesh
-            scale={MathUtils.randFloat(0.05, 0.09)}
-            position={[MathUtils.randFloat(-8, 8), MathUtils.randFloat(0, 4), MathUtils.randFloat(-8, -2)]}
-            geometry={prop.geometry}
-            material={material}
-          />
-        </Float>
-      )
-    })
-  } */
-
 
 export default function Experience() {
     const computer = useGLTF('./ipad.gltf')   
@@ -78,8 +43,6 @@ export default function Experience() {
     return <>
         <color args={ [ '#000000' ] } attach="background" />
 
-{/*         <Input position={[0, 0, 0]} />
- */}
         
         <PresentationControls
             global
@@ -145,16 +108,7 @@ export default function Experience() {
                         Q&A
         </Text>
 
-        {/* <Text
-                    font="./RussoOne-Regular.ttf"
-                    fontSize={ .15 }
-                    position={ [ 0, -1.2, 0 ] }
-                    rotation-y={ 0 }
-                    maxWidth={ 4 }
-                    onClick={() => handleButtonClick("http://localhost:3000/")}
-                    >
-                        PRESENTACIÓN
-        </Text> */}
+
 
         <Image
         url="./pilar.png"
@@ -233,12 +187,6 @@ export default function Experience() {
         <Cloud position={[16, 4, -25]} speed={0.2} opacity={0.1} /> */}
 
 
-
-{/*         <Geometries />
- */}
-        {/* <EffectComposer>
-            <Bloom mipmapBlur luminanceThreshold={1} radius={0.7} />
-        </EffectComposer> */}
 
         <Sparkles
             size={ 6 }
