@@ -92,7 +92,7 @@ export default function Experience() {
                     position={ [ -1, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                        onClick={() => handleButtonClick("https://tockify.com/rodrigo.garcia/agenda")}
+                        onClick={() => handleButtonClick("https://tockify.com/rodrigo.garcia")}
                     >
                         EVENTOS
         </Text>
