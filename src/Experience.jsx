@@ -103,7 +103,7 @@ export default function Experience() {
                     position={ [ -.45, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                        onClick={() => handleButtonClick("https://askmybook.com/")}
+                        onClick={() => handleButtonClick("https://rgsaura-ia1.herokuapp.com/")}
                     >
                         Q&A
         </Text>
@@ -116,7 +116,7 @@ export default function Experience() {
         transparent
         position={ [ 0, -1.25, 0 ] }
         rotation={ [ -0.5, 0, 0 ] }
-        onClick={() => handleButtonClick("http://localhost:3000/")}
+        onClick={() => handleButtonClick("https://inicio-ks2lesn6p-rgsaura.vercel.app/")}
         ></Image>
 
         <Image
@@ -125,7 +125,7 @@ export default function Experience() {
         transparent
         position={ [ 0, -1.4, 0.3 ] }
         rotation={ [ -0.5, 0, 0 ] }
-        onClick={() => handleButtonClick("http://localhost:3000/")}
+        onClick={() => handleButtonClick("https://inicio-ks2lesn6p-rgsaura.vercel.app/")}
         ></Image>
 
         <Image
@@ -154,7 +154,7 @@ export default function Experience() {
                     position={ [ 1.1, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                    onClick={() => handleButtonClick("http://rgsaura.local/")}
+                    onClick={() => handleButtonClick("https://rgsaura.github.io/tienda-wordpress/")}
                     >
                         UTILIDADES
         </Text>
