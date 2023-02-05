@@ -13,7 +13,7 @@ export default function Experience() {
 
     const computer = useGLTF('./ipad.gltf')   
     
-    const [currentWebsite, setCurrentWebsite] = useState("https://inicio-ks2lesn6p-rgsaura.vercel.app/");
+    const [currentWebsite, setCurrentWebsite] = useState("https://inicio-alpha.vercel.app");
     const [ matcapTexture ] = useMatcapTexture('17395A_7EBCC7_4D8B9F_65A1B5', 256)
 
 
@@ -119,7 +119,7 @@ export default function Experience() {
         transparent
         position={ [ 0, -1.25, 0 ] }
         rotation={ [ -0.5, 0, 0 ] }
-        onClick={() => handleButtonClick("inicio-alpha.vercel.app")}
+        onClick={() => handleButtonClick("https://inicio-alpha.vercel.app")}
         ></Image>
 
         <Image
