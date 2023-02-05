@@ -188,6 +188,18 @@ export default function Experience() {
                     >
                         UTILIDADES
         </Text>
+
+        <Text
+                    font="./RussoOne-Regular.ttf"
+                    fontSize={ .05 }
+                    position={ [ 0, -2, 1 ] }
+                    rotation={ [ -0.5, 0, 0 ] }
+                    maxWidth={ 4 }
+                    onClick={() => handleButtonClick("https://rgsaura.github.io/tienda-wordpress/toolkits/")}
+                    color="#444444"
+                    >
+                        ¡PRUEBA DESDE EL ORDENADOR!
+        </Text>
                    
 
         <Text3D
@@ -228,10 +240,10 @@ export default function Experience() {
         />
 
         <Sparkles
-            size={ 4 }
+            size={ 3 }
                     scale={ [ 7, 2, 2 ] }
                     position-z={ -6 }
-                    position-y={ 4 }
+                    position-y={ 3.5 }
                     speed={ 0.5 }
             count={ 100 }
             color={ '#07abc7' }
@@ -241,7 +253,7 @@ export default function Experience() {
             size={ 2 }
                     scale={ [ 3, 1, 2 ] }
                     position-z={ 0 }
-                    position-y={ -3.3 }
+                    position-y={ -3.2 }
                     speed={ 0.5 }
             count={ 100 }
             color={ '#07abc7' }
