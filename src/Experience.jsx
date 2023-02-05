@@ -241,7 +241,7 @@ export default function Experience() {
             size={ 2 }
                     scale={ [ 3, 1, 2 ] }
                     position-z={ 0 }
-                    position-y={ -3 }
+                    position-y={ -3.3 }
                     speed={ 0.5 }
             count={ 100 }
             color={ '#07abc7' }
