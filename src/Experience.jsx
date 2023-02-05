@@ -74,8 +74,8 @@ export default function Experience() {
                         position={ [ 0, 1.50, - 1.4 ] }
                         rotation-x={ - 0.256 }
                     >
-                        <iframe src={currentWebsite} />
-                    </Html>
+                        <iframe src={currentWebsite} frameborder="0" allow="xr-spatial-tracking" allowfullscreen=""/>
+                    </Html> 
                 </primitive>
 
              
@@ -132,9 +132,39 @@ export default function Experience() {
         url="./menu.png"
         scale={2}
         transparent
-        position={ [ 0, -1.25, -0.1 ] }
+        position={ [ 0, -1.20, -0.1 ] }
         rotation={ [ -0.5, 0, 0 ] }
         ></Image>
+
+        {/* <primitive
+            object={ computer.scene }
+            position-y={ - 1.2 }>
+             <Html
+                        transform
+                        wrapperClass="htmlScreen"
+                        distanceFactor={ 1.17 }
+                        position={ [ 0, 0, - 1.4 ] }
+                        rotation-x={ - 0.256 }
+                    >
+                        <iframe src="./video.mp4" controls="false" autoplay="true" muted/>
+                    </Html> 
+        </primitive> */}
+
+       {/*  <Image
+        url="./menu.png"
+        scale={2}
+        transparent
+        position={ [ 0, 2, -0.1 ] }
+        rotation={ [ -0.5, 0, 0 ] }
+        ></Image>
+
+        <Image
+        url="./menu.png"
+        scale={2}
+        transparent
+        position={ [ 0, -2.5, -0.1 ] }
+        rotation={ [ -0.5, 0, 0 ] }
+        ></Image> */}
 
 
         <Text
@@ -195,6 +225,26 @@ export default function Experience() {
                     speed={ 0.5 }
             count={ 200 }
             color={ '#14dbfd' }
+        />
+
+        <Sparkles
+            size={ 4 }
+                    scale={ [ 7, 2, 2 ] }
+                    position-z={ -6 }
+                    position-y={ 4 }
+                    speed={ 0.5 }
+            count={ 100 }
+            color={ '#07abc7' }
+        />
+
+        <Sparkles
+            size={ 4 }
+                    scale={ [ 7, 2, 2 ] }
+                    position-z={ -6 }
+                    position-y={ -6.5 }
+                    speed={ 0.5 }
+            count={ 100 }
+            color={ '#07abc7' }
         />
 
         <pointLight

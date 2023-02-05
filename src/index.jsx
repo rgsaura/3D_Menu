@@ -14,7 +14,7 @@ root.render(
             fov: 50,
             near: 0.1,
             far: 2000,
-            position: isMobile ? [0, 1, 5] : [0, 1, 3.2]
+            position: isMobile ? [0, 1, 5.5] : [0, 1, 3.2]
         } }
     >
         <Experience />
