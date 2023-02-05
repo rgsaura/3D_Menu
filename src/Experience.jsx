@@ -238,10 +238,10 @@ export default function Experience() {
         />
 
         <Sparkles
-            size={ 4 }
-                    scale={ [ 7, 2, 2 ] }
-                    position-z={ -6 }
-                    position-y={ -6.5 }
+            size={ 2 }
+                    scale={ [ 3, 1, 2 ] }
+                    position-z={ 0 }
+                    position-y={ -3 }
                     speed={ 0.5 }
             count={ 100 }
             color={ '#07abc7' }
