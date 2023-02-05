@@ -7,7 +7,6 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { ControlledInput } from './ControlledInput'
 
 
-
 export default function Experience() {
 
 
@@ -44,8 +43,6 @@ export default function Experience() {
 
     return <>
         <color args={ [ '#000000' ] } attach="background" />
-
-   
         
         <PresentationControls
             global
