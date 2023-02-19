@@ -119,14 +119,14 @@ export default function Experience() {
         onClick={() => handleButtonClick("https://inicio-alpha.vercel.app")}
         ></Image>
 
-        <Image
+        {/* <Image
         url="./gafas.png"
         scale={.15}
         transparent
         position={ [ 0, -1.4, 0.3 ] }
         rotation={ [ -0.5, 0, 0 ] }
         onClick={() => handleButtonClick("https://superb-marten.super.site/")}
-        ></Image>
+        ></Image> */}
 
         <Image
         url="./menu.png"
