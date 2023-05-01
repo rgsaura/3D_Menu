@@ -175,7 +175,7 @@ export default function Experience() {
                     maxWidth={ 4 }
                     onClick={() => handleButtonClick("https://vr.rgsaura.com")}
                     >
-                        MUNDO
+                        METAVERSO
         </Text>
 
         {/* <Text
