@@ -173,7 +173,7 @@ export default function Experience() {
                     position={ [ .7, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                    onClick={() => handleButtonClick("https://rgsaura.github.io/rgsaura-virtualshowroom/")}
+                    onClick={() => handleButtonClick("https://vr.rgsaura.com")}
                     >
                         MUNDO
         </Text>
