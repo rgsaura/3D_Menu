@@ -170,7 +170,7 @@ export default function Experience() {
         <Text
                     font="./RussoOne-Regular.ttf"
                     fontSize={ .10 }
-                    position={ [ .45, -1.25, 0 ] }
+                    position={ [ .7, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
                     onClick={() => handleButtonClick("https://rgsaura.github.io/rgsaura-virtualshowroom/")}
