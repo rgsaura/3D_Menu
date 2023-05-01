@@ -86,7 +86,7 @@ export default function Experience() {
             </Float>
         </PresentationControls>
 
-        <Text
+        {/* <Text
                         font="./RussoOne-Regular.ttf"
                         fontSize={ .10 }
                     position={ [ -1, -1.25, 0 ] }
@@ -95,7 +95,7 @@ export default function Experience() {
                         onClick={() => handleButtonClick("https://tockify.com/rodrigo.garcia/monthly")}
                     >
                         EVENTOS
-        </Text>
+        </Text> */}
 
         <Text
                         font="./RussoOne-Regular.ttf"
@@ -103,9 +103,9 @@ export default function Experience() {
                     position={ [ -.45, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                        onClick={() => handleButtonClick("https://rgsaura-ia1.herokuapp.com/")}
+                        onClick={() => handleButtonClick("https://rgsaura.github.io/tienda-wordpress/toolkits/")}
                     >
-                        Q&A
+                        UTILIDADES
         </Text>
 
 
@@ -178,7 +178,7 @@ export default function Experience() {
                         MUNDO
         </Text>
 
-        <Text
+        {/* <Text
                     font="./RussoOne-Regular.ttf"
                     fontSize={ .10 }
                     position={ [ 1.1, -1.25, 0 ] }
@@ -187,7 +187,7 @@ export default function Experience() {
                     onClick={() => handleButtonClick("https://rgsaura.github.io/tienda-wordpress/toolkits/")}
                     >
                         UTILIDADES
-        </Text>
+        </Text> */}
 
         <Text
                     font="./RussoOne-Regular.ttf"
