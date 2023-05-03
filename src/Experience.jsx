@@ -178,16 +178,16 @@ export default function Experience() {
                         METAVERSO
         </Text>
 
-        {/* <Text
+        <Text
                     font="./RussoOne-Regular.ttf"
                     fontSize={ .10 }
                     position={ [ 1.1, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                    onClick={() => handleButtonClick("https://rgsaura.github.io/tienda-wordpress/toolkits/")}
+                    onClick={() => handleButtonClick("https://rgsaura.super.site")}
                     >
-                        UTILIDADES
-        </Text> */}
+                        CONTEXTO
+        </Text>
 
         <Text
                     font="./RussoOne-Regular.ttf"
