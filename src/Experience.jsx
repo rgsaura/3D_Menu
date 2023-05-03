@@ -181,7 +181,7 @@ export default function Experience() {
         <Text
                     font="./RussoOne-Regular.ttf"
                     fontSize={ .10 }
-                    position={ [ 1.25, -1.25, 0 ] }
+                    position={ [ 1.3, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
                     onClick={() => handleButtonClick("https://rgsaura.super.site")}
