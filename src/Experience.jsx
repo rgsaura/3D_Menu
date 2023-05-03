@@ -86,16 +86,16 @@ export default function Experience() {
             </Float>
         </PresentationControls>
 
-        {/* <Text
+        <Text
                         font="./RussoOne-Regular.ttf"
                         fontSize={ .10 }
-                    position={ [ -1, -1.25, 0 ] }
+                    position={ [ -1.2, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                        onClick={() => handleButtonClick("https://tockify.com/rodrigo.garcia/monthly")}
+                        onClick={() => handleButtonClick("https://inicio-alpha.vercel.app")}
                     >
-                        EVENTOS
-        </Text> */}
+                        INICIO
+        </Text>
 
         <Text
                         font="./RussoOne-Regular.ttf"
@@ -181,7 +181,7 @@ export default function Experience() {
         <Text
                     font="./RussoOne-Regular.ttf"
                     fontSize={ .10 }
-                    position={ [ 1.3, -1.25, 0 ] }
+                    position={ [ 1.2, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
                     onClick={() => handleButtonClick("https://rgsaura.super.site")}
