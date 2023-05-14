@@ -103,7 +103,7 @@ export default function Experience() {
                     position={ [ -.6, -1.25, 0 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                        onClick={() => handleButtonClick("https://rgsaura.github.io/tienda-wordpress/toolkits/")}
+                        onClick={() => handleButtonClick("https://utilidades.super.site")}
                     >
                         UTILIDADES
         </Text>
@@ -195,7 +195,6 @@ export default function Experience() {
                     position={ [ 0, -2, 1 ] }
                     rotation={ [ -0.5, 0, 0 ] }
                     maxWidth={ 4 }
-                    onClick={() => handleButtonClick("https://utilidades.super.site")}
                     color="#444444"
                     >
                         ¡PRUEBA DESDE EL ORDENADOR!
