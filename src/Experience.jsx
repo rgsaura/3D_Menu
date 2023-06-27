@@ -94,7 +94,7 @@ export default function Experience() {
                     maxWidth={ 4 }
                         onClick={() => handleButtonClick("https://inicio-alpha.vercel.app")}
                     >
-                        INICIO
+                        HOME
         </Text>
 
         <Text
@@ -105,7 +105,7 @@ export default function Experience() {
                     maxWidth={ 4 }
                         onClick={() => handleButtonClick("https://utilidades.super.site")}
                     >
-                        UTILIDADES
+                        INSPIRATION
         </Text>
 
 
@@ -175,7 +175,7 @@ export default function Experience() {
                     maxWidth={ 4 }
                     onClick={() => handleButtonClick("https://vr.rgsaura.com")}
                     >
-                        METAVERSO
+                        METAVERSE
         </Text>
 
         <Text
@@ -186,7 +186,7 @@ export default function Experience() {
                     maxWidth={ 4 }
                     onClick={() => handleButtonClick("https://rgsaura.super.site")}
                     >
-                        CONTEXTO
+                        CONTEXT
         </Text>
 
         <Text
@@ -197,7 +197,7 @@ export default function Experience() {
                     maxWidth={ 4 }
                     color="#444444"
                     >
-                        ¡PRUEBA DESDE EL ORDENADOR!
+                        ¡TRY FROM THE COMPUTER!
         </Text>
                    
 
