@@ -1,4 +1,4 @@
-# Menu3D_RGSAURA
+# 3D_Menu
 
 Here you have a 3D website you can copy and add your own take on it.
 
