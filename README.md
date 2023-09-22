@@ -1,4 +1,4 @@
-# 3D_Menu
+# 3D Menu
 
 Here you have a 3D website you can copy and add your own take on it. Check it out live in https://menu.rgsaura.com.
 
